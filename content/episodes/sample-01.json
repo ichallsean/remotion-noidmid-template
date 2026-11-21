@@ -1,0 +1,39 @@
+{
+  "slug": "sample-01",
+  "title": "From Idea to Impact",
+  "subtitle": "A repeatable video workflow",
+  "themeColor": "#7c3aed",
+  "audioFile": "episodes/sample-01/voiceover.mp3",
+  "slides": [
+    {
+      "id": "hook",
+      "title": "Start with a hook",
+      "body": "Open with the promise of the episode in a single sentence.",
+      "durationInSeconds": 3
+    },
+    {
+      "id": "problem",
+      "title": "Name the problem",
+      "body": "Show the friction your audience already feels.",
+      "durationInSeconds": 4
+    },
+    {
+      "id": "method",
+      "title": "Share the method",
+      "body": "Break the solution into three concrete steps.",
+      "durationInSeconds": 5
+    },
+    {
+      "id": "proof",
+      "title": "Prove it works",
+      "body": "Add a result, a number, or a short story.",
+      "durationInSeconds": 4
+    },
+    {
+      "id": "cta",
+      "title": "Close with a call to action",
+      "body": "Tell the viewer exactly what to do next.",
+      "durationInSeconds": 3
+    }
+  ]
+}
