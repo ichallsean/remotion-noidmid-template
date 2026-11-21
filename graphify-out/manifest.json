@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "src/Root.tsx": {
-    "mtime": 1794997116.0,
-    "seen": 1795230633.5452025,
-    "ast_hash": "f1171865c8c7ea00f31e907e35f69b3b",
+    "mtime": 1795232312.2818356,
+    "seen": 1795232695.7393818,
+    "ast_hash": "4b4340d20a36375033f26b86894f1016",
     "semantic_hash": ""
   },
   "src/index.ts": {
@@ -396,9 +396,9 @@
     "semantic_hash": ""
   },
   "tsconfig.json": {
-    "mtime": 1794997116.0,
-    "seen": 1795230633.5452044,
-    "ast_hash": "3f9d94814358aa5e8a039f53ae3eee99",
+    "mtime": 1795232319.014812,
+    "seen": 1795232695.7393975,
+    "ast_hash": "654597ab051a80d090ba0a54332879ce",
     "semantic_hash": ""
   },
   ".agents/skills/remotion-best-practices/SKILL.md": {
@@ -1593,6 +1593,78 @@
     "mtime": 1795230305.917092,
     "seen": 1795230633.5454526,
     "ast_hash": "b5c64da470eb3e3705453858790fe6b2",
+    "semantic_hash": ""
+  },
+  "content/episodes/sample-01.json": {
+    "mtime": 1795232314.2108288,
+    "seen": 1795232695.739367,
+    "ast_hash": "04a77f796cbfc72e6e44b069d1171acb",
+    "semantic_hash": ""
+  },
+  "src/components/AudioLayer.tsx": {
+    "mtime": 1795230809.7505476,
+    "seen": 1795232695.739383,
+    "ast_hash": "8581eb433dbd796030d6d8b045f6d6f4",
+    "semantic_hash": ""
+  },
+  "src/components/KineticTitle.tsx": {
+    "mtime": 1795232286.0879261,
+    "seen": 1795232695.7393844,
+    "ast_hash": "a4f15f8b8b14a74f7918775a4519cd13",
+    "semantic_hash": ""
+  },
+  "src/components/ProgressBar.tsx": {
+    "mtime": 1795232291.610907,
+    "seen": 1795232695.7393856,
+    "ast_hash": "4e953c491e8a39561f71ff9375dc7b6a",
+    "semantic_hash": ""
+  },
+  "src/components/SlideCard.tsx": {
+    "mtime": 1795232290.216912,
+    "seen": 1795232695.7393868,
+    "ast_hash": "d6a802f231a285f5db0bb6f11359dfbb",
+    "semantic_hash": ""
+  },
+  "src/components/index.ts": {
+    "mtime": 1795232292.190905,
+    "seen": 1795232695.7393882,
+    "ast_hash": "9433fdf9173fd4fa01be548d427aa1b4",
+    "semantic_hash": ""
+  },
+  "src/compositions/EpisodeVideo.tsx": {
+    "mtime": 1795232333.8127608,
+    "seen": 1795232695.7393892,
+    "ast_hash": "a6cabe81b023921405a0aa5382bda5f8",
+    "semantic_hash": ""
+  },
+  "src/compositions/LandscapeVideo.tsx": {
+    "mtime": 1795232305.1108603,
+    "seen": 1795232695.7393904,
+    "ast_hash": "6a419383ac9fef18db64a7614046936f",
+    "semantic_hash": ""
+  },
+  "src/compositions/VerticalReels.tsx": {
+    "mtime": 1795232304.040864,
+    "seen": 1795232695.7393916,
+    "ast_hash": "86e4ec10f69e5655a15dd643ed558bee",
+    "semantic_hash": ""
+  },
+  "src/compositions/episode-metadata.ts": {
+    "mtime": 1795232297.2248876,
+    "seen": 1795232695.7393925,
+    "ast_hash": "c40278e8619a7b69fe839d4ee0e53eec",
+    "semantic_hash": ""
+  },
+  "src/compositions/index.ts": {
+    "mtime": 1795232305.9728572,
+    "seen": 1795232695.7393937,
+    "ast_hash": "f7b75969d39f8ed1b7cd191e7fbea65c",
+    "semantic_hash": ""
+  },
+  "src/schemas/episode.ts": {
+    "mtime": 1795232283.4259355,
+    "seen": 1795232695.7393963,
+    "ast_hash": "732439c29d8efdde808f285b24ce2a9a",
     "semantic_hash": ""
   },
   "package-lock.json": {

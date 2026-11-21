@@ -1,4 +1,5 @@
 import React from "react";
+import { Audio, staticFile } from "remotion";
 import type { CalculateMetadataFunction } from "remotion";
 import { EpisodeVideo } from "./EpisodeVideo";
 import type {
@@ -17,5 +18,14 @@ export const calculateVerticalReelsMetadata: CalculateMetadataFunction<EpisodeCo
   getEpisodeMetadata(VERTICAL_REELS_CONFIG);
 
 export const VerticalReels: React.FC<EpisodeCompositionProps> = (props) => {
-  return <EpisodeVideo {...props} layout="vertical" />;
+  const audioAvailable = Boolean(props.audioAvailable && props.audioFile);
+
+  return (
+    <>
+      {audioAvailable && props.audioFile ? (
+        <Audio src={staticFile(props.audioFile)} />
+      ) : null}
+      <EpisodeVideo {...props} audioAvailable={false} layout="vertical" />
+    </>
+  );
 };

@@ -1,12 +1,12 @@
 # Graph Report - remotion  (2026-11-21)
 
 ## Corpus Check
-- 239 files · ~103,840 words
+- 251 files · ~105,612 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 6 file(s) not represented in the graph (top: .geojson 4, (none) 2)
+- Unclassified: 9 file(s) not represented in the graph (top: .geojson 4, (none) 4, .fish 1)
 
 ## Summary
-- 1589 nodes · 1694 edges · 166 communities (151 shown, 15 thin omitted)
+- 1634 nodes · 1820 edges · 165 communities (153 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -32,7 +32,7 @@
 - remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx
 - remotion-captions/REFERENCE.md
 - compilerOptions
-- remotion-best-practices/remotion-markup/video-editing.md
+- remotion-best-practices/remotion-markup/compositions.md
 - remotion-create/REFERENCE.md
 - remotion-create/SKILL.md
 - Arabic and right-to-left text
@@ -71,7 +71,7 @@
 - interface
 - interface
 - interface
-- remotion-best-practices/remotion-interactivity/timeline-structure.md
+- Editable timeline structure
 - interface
 - interface
 - interface
@@ -103,7 +103,7 @@
 - CesiumJS — 3D flyovers in Remotion
 - Using Three.js and React Three Fiber in Remotion
 - Color correction
-- remotion-best-practices/remotion-markup/compositions.md
+- remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx
 - Using `<HtmlInCanvas>` in Remotion
 - Measuring text in Remotion
 - remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md
@@ -162,33 +162,32 @@
 - remotion-docs/REFERENCE.md
 - remotion-best-practices/remotion-markup/images.md
 - Video matting
-- Rendering Transparent Videos
+- skills/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx
 - remotion-docs/SKILL.md
 - skills/remotion-markup/images.md
 - Video matting
 - remotion-best-practices/remotion-markup/measuring-dom-nodes.md
-- remotion-best-practices/remotion-markup/sequencing.md
+- skills/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx
 - skills/remotion-markup/measuring-dom-nodes.md
-- remotion-best-practices/remotion-markup/parameters.md
-- Visual and pixel effects
+- Editable video timelines
+- skills/remotion-markup/parameters.md
 - remotion-license/SKILL.md
 - skills/remotion-markup/cropping.md
 - Visual and pixel effects
-- skills/remotion-markup/text-highlights.md
 - remotion-studio/SKILL.md
 - remotion-upgrade/SKILL.md
 
 ## God Nodes (most connected - your core abstractions)
-1. `remotion` - 17 edges
-2. `react` - 14 edges
-3. `compilerOptions` - 12 edges
-4. `Using audio in Remotion` - 10 edges
+1. `remotion` - 25 edges
+2. `react` - 20 edges
+3. `compilerOptions` - 13 edges
+4. `EpisodeVideo()` - 10 edges
 5. `Using audio in Remotion` - 10 edges
-6. `Using videos in Remotion` - 9 edges
-7. `Export to OpenTimelineIO` - 9 edges
-8. `Using videos in Remotion` - 9 edges
-9. `Export to OpenTimelineIO` - 9 edges
-10. `CesiumFlythrough()` - 8 edges
+6. `Using audio in Remotion` - 10 edges
+7. `Using videos in Remotion` - 9 edges
+8. `Export to OpenTimelineIO` - 9 edges
+9. `Using videos in Remotion` - 9 edges
+10. `Export to OpenTimelineIO` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `CesiumFlythrough()` --calls--> `smoothFlightPath()`  [EXTRACTED]
@@ -205,11 +204,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (166 total, 15 thin omitted)
+## Communities (165 total, 12 thin omitted)
 
 ### Community 0 - "remotion"
-Cohesion: 0.05
-Nodes (48): bearing(), CesiumFlythrough(), CesiumFlythroughProps, clamp(), FlyoverMode, havKm(), lerp(), loadCesium() (+40 more)
+Cohesion: 0.07
+Nodes (44): react, remotion, KineticTitle(), KineticTitleProps, ProgressBar(), ProgressBarProps, SlideCard(), SlideCardProps (+36 more)
 
 ### Community 1 - "skills/remotion-markup/transitions.md"
 Cohesion: 0.04
@@ -217,7 +216,7 @@ Nodes (42): Delaying, Importing Audio, Looping, Muting, Pitch, Prerequisites, Sp
 
 ### Community 2 - "remotion-markup/SKILL.md"
 Cohesion: 0.05
-Nodes (39): Color picker, 3D content, Advanced Images, Advanced sequencing, Arabic and right-to-left text, Assets, Audio visualization, Captions (+31 more)
+Nodes (39): 3D content, Advanced Images, Advanced sequencing, Arabic and right-to-left text, Assets, Audio visualization, Captions, Color correction (+31 more)
 
 ### Community 3 - "package.json"
 Cohesion: 0.06
@@ -229,7 +228,7 @@ Nodes (35): Delaying, Importing Audio, Looping, Muting, Pitch, Prerequisites, Sp
 
 ### Community 5 - "remotion-markup/REFERENCE.md"
 Cohesion: 0.05
-Nodes (38): 3D content, Advanced Images, Advanced sequencing, Arabic and right-to-left text, Assets, Audio visualization, Captions, Color correction (+30 more)
+Nodes (41): Color picker, 3D content, Advanced Images, Advanced sequencing, Arabic and right-to-left text, Assets, Audio visualization, Available effects (+33 more)
 
 ### Community 6 - "remotion-captions/SKILL.md"
 Cohesion: 0.10
@@ -268,8 +267,8 @@ Cohesion: 0.12
 Nodes (15): A, AB, B, clip, __dir, even, havKm(), hs (+7 more)
 
 ### Community 15 - "remotion-best-practices/SKILL.md"
-Cohesion: 0.11
-Nodes (15): Useful flags, Upgrade Remotion, Captions, Creating a SaaS, automation or application, Creating a video, Interactivity, Licensing, Looking up Remotion APIs and documentation (+7 more)
+Cohesion: 0.12
+Nodes (14): Upgrade Remotion, Captions, Creating a SaaS, automation or application, Creating a video, Interactivity, Licensing, Looking up Remotion APIs and documentation, Maps (+6 more)
 
 ### Community 16 - "skills/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs"
 Cohesion: 0.13
@@ -288,16 +287,16 @@ Cohesion: 0.13
 Nodes (13): Importing .srt subtitles into Remotion, Prerequisites, Reading an .srt file, Using imported captions, Displaying captions, Generating captions, Importing captions, Post-creation (+5 more)
 
 ### Community 20 - "compilerOptions"
-Cohesion: 0.14
-Nodes (13): compilerOptions, esModuleInterop, forceConsistentCasingInFileNames, jsx, lib, module, moduleResolution, noEmit (+5 more)
+Cohesion: 0.13
+Nodes (14): compilerOptions, esModuleInterop, forceConsistentCasingInFileNames, jsx, lib, module, moduleResolution, noEmit (+6 more)
 
-### Community 21 - "remotion-best-practices/remotion-markup/video-editing.md"
-Cohesion: 0.15
-Nodes (11): Adding the Basic Captions element, Displaying captions alongside video content, Displaying captions in Remotion, Prerequisites, White-space preservation, Choose the cut behavior, Editable video timelines, Keep synchronized layers on one clock (+3 more)
+### Community 21 - "remotion-best-practices/remotion-markup/compositions.md"
+Cohesion: 0.11
+Nodes (13): Adding the Basic Captions element, Displaying captions alongside video content, Displaying captions in Remotion, Prerequisites, White-space preservation, Default Props and scaffold metadata, Dynamic duration, width, and height, Folders (+5 more)
 
 ### Community 22 - "remotion-create/REFERENCE.md"
-Cohesion: 0.15
-Nodes (10): Designing a video, Empty folder, Follow-up, Interactivity Best Practices, Is this a multi-scene video?, Is this a timeline of clips?, Non-empty folder, Open the preview before building the video (+2 more)
+Cohesion: 0.13
+Nodes (11): Designing a video, Empty folder, Follow-up, Interactivity Best Practices, Is this a multi-scene video?, Is this a timeline of clips?, Non-empty folder, Open the preview before building the video (+3 more)
 
 ### Community 23 - "remotion-create/SKILL.md"
 Cohesion: 0.15
@@ -380,8 +379,8 @@ Cohesion: 0.20
 Nodes (7): Choose the timing boundary, Choose the cut behavior, Editable video timelines, Keep synchronized layers on one clock, Place overlays at the scope they span, Preserve the edit when restructuring, Put music segments on a shared track
 
 ### Community 43 - "remotion-render/REFERENCE.md"
-Cohesion: 0.22
-Nodes (6): Remotion License, General rendering strategy, License key, OpenTimelineIO export (optional), Passing input props, Transparent videos
+Cohesion: 0.18
+Nodes (8): General rendering strategy, License key, OpenTimelineIO export (optional), Passing input props, Transparent videos, Rendering Transparent Videos, Transparent ProRes, Transparent WebM (VP9)
 
 ### Community 44 - "MapTiler maps in Remotion"
 Cohesion: 0.22
@@ -408,8 +407,8 @@ Cohesion: 0.25
 Nodes (6): Angular, Choosing a template or a framework, Rendering, Svelte, The `<Player>`, With Vue
 
 ### Community 50 - "remotion-best-practices/remotion-saas/rendering.md"
-Cohesion: 0.22
-Nodes (8): Azure Container Apps, Cloudflare Containers, Comparison of SSR methods, GitHub Actions, Plain Node.js APIs, Remotion Lambda, Steps to set up Lambda, Vercel
+Cohesion: 0.18
+Nodes (9): Remotion License, Azure Container Apps, Cloudflare Containers, Comparison of SSR methods, GitHub Actions, Plain Node.js APIs, Remotion Lambda, Steps to set up Lambda (+1 more)
 
 ### Community 51 - "MapTiler maps in Remotion"
 Cohesion: 0.22
@@ -447,9 +446,9 @@ Nodes (7): interface, brand_color, default_prompt, display_name, icon_large, ico
 Cohesion: 0.25
 Nodes (7): interface, brand_color, default_prompt, display_name, icon_large, icon_small, short_description
 
-### Community 60 - "remotion-best-practices/remotion-interactivity/timeline-structure.md"
-Cohesion: 0.29
-Nodes (5): Choose how items share time, Complete example, Editable timeline structure, Give substantial groups their own timelines, Multi-scene videos
+### Community 60 - "Editable timeline structure"
+Cohesion: 0.50
+Nodes (4): Choose how items share time, Complete example, Editable timeline structure, Give substantial groups their own timelines
 
 ### Community 61 - "interface"
 Cohesion: 0.25
@@ -575,9 +574,9 @@ Nodes (6): Animate using `useCurrentFrame()`, No animations not driven by `useCu
 Cohesion: 0.29
 Nodes (7): Color correction, Levels and Curves, LUTs and combining effects, Primary adjustments, See also, Studio workflow, Supported format and limitations
 
-### Community 92 - "remotion-best-practices/remotion-markup/compositions.md"
-Cohesion: 0.29
-Nodes (6): Default Props and scaffold metadata, Dynamic duration, width, and height, Folders, Nesting compositions within another, Source-editable registrations, Stills
+### Community 92 - "remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+Cohesion: 0.20
+Nodes (11): bearing(), CesiumFlythrough(), CesiumFlythroughProps, clamp(), FlyoverMode, havKm(), lerp(), loadCesium() (+3 more)
 
 ### Community 93 - "Using `<HtmlInCanvas>` in Remotion"
 Cohesion: 0.29
@@ -795,9 +794,9 @@ Nodes (3): Dynamic image paths, Getting image dimensions, Sizing and positioning
 Cohesion: 0.50
 Nodes (3): Compose the result, Generate the layers, Video matting
 
-### Community 151 - "Rendering Transparent Videos"
-Cohesion: 0.50
-Nodes (3): Rendering Transparent Videos, Transparent ProRes, Transparent WebM (VP9)
+### Community 151 - "skills/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+Cohesion: 0.20
+Nodes (11): bearing(), CesiumFlythrough(), CesiumFlythroughProps, clamp(), FlyoverMode, havKm(), lerp(), loadCesium() (+3 more)
 
 ### Community 152 - "remotion-docs/SKILL.md"
 Cohesion: 0.50
@@ -811,14 +810,26 @@ Nodes (3): Dynamic image paths, Getting image dimensions, Sizing and positioning
 Cohesion: 0.50
 Nodes (3): Compose the result, Generate the layers, Video matting
 
+### Community 156 - "skills/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+Cohesion: 0.20
+Nodes (11): bearing(), CesiumFlythrough(), CesiumFlythroughProps, clamp(), FlyoverMode, havKm(), lerp(), loadCesium() (+3 more)
+
+### Community 158 - "Editable video timelines"
+Cohesion: 0.33
+Nodes (6): Choose the cut behavior, Editable video timelines, Keep synchronized layers on one clock, Place overlays at the scope they span, Preserve the edit when restructuring, Put music segments on a shared track
+
 ## Knowledge Gaps
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `CesiumJS — 3D flyovers in Remotion` connect `CesiumJS — 3D flyovers in Remotion` to `remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Should `remotion` be split into smaller, more focused modules?**
-  _Cohesion score 0.05009009009009009 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07462686567164178 - nodes in this community are weakly interconnected._
+- **Why does `remotion` connect `remotion` to `package.json`, `remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`, `remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`, `skills/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`, `skills/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Should `skills/remotion-markup/transitions.md` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `remotion-markup/SKILL.md` be split into smaller, more focused modules?**
@@ -827,7 +838,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.059233449477351915 - nodes in this community are weakly interconnected._
 - **Should `Using audio in Remotion` be split into smaller, more focused modules?**
   _Cohesion score 0.05121951219512195 - nodes in this community are weakly interconnected._
-- **Should `remotion-markup/REFERENCE.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
-- **Should `remotion-captions/SKILL.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.09956709956709957 - nodes in this community are weakly interconnected._
