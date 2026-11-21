@@ -1,7 +1,7 @@
 # Graph Report - remotion  (2026-11-21)
 
 ## Corpus Check
-- 251 files · ~105,612 words
+- 251 files · ~105,670 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 9 file(s) not represented in the graph (top: .geojson 4, (none) 4, .fish 1)
 
@@ -9,6 +9,11 @@
 - 1634 nodes · 1820 edges · 165 communities (153 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `1b3f1328`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - remotion
@@ -184,22 +189,22 @@
 4. `EpisodeVideo()` - 10 edges
 5. `Using audio in Remotion` - 10 edges
 6. `Using audio in Remotion` - 10 edges
-7. `Using videos in Remotion` - 9 edges
-8. `Export to OpenTimelineIO` - 9 edges
+7. `Export to OpenTimelineIO` - 9 edges
+8. `Using videos in Remotion` - 9 edges
 9. `Using videos in Remotion` - 9 edges
 10. `Export to OpenTimelineIO` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `CesiumFlythrough()` --calls--> `smoothFlightPath()`  [EXTRACTED]
-  .agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx → .agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/flight-path.ts
-- `CesiumFlythrough()` --calls--> `smoothFlightPath()`  [EXTRACTED]
-  .agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx → .agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts
-- `CesiumFlythrough()` --calls--> `smoothFlightPath()`  [EXTRACTED]
-  .agents/skills/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx → .agents/skills/remotion-maps/techniques/cesium/assets/flight-path.ts
-- `CesiumFlythrough()` --calls--> `smoothFlightPath()`  [EXTRACTED]
-  .agents/skills/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx → .agents/skills/remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts
-- `HelloWorld()` --calls--> `Logo`  [EXTRACTED]
-  src/HelloWorld.tsx → src/HelloWorld/Logo.tsx
+- `LandscapeVideo()` --calls--> `EpisodeVideo()`  [EXTRACTED]
+  src/compositions/LandscapeVideo.tsx → src/compositions/EpisodeVideo.tsx
+- `VerticalReels()` --calls--> `EpisodeVideo()`  [EXTRACTED]
+  src/compositions/VerticalReels.tsx → src/compositions/EpisodeVideo.tsx
+- `IntroTitle()` --calls--> `KineticTitle()`  [EXTRACTED]
+  src/compositions/EpisodeVideo.tsx → src/components/KineticTitle.tsx
+- `EpisodeVideo()` --calls--> `ProgressBar()`  [EXTRACTED]
+  src/compositions/EpisodeVideo.tsx → src/components/ProgressBar.tsx
+- `EpisodeVideo()` --calls--> `SlideCard()`  [EXTRACTED]
+  src/compositions/EpisodeVideo.tsx → src/components/SlideCard.tsx
 
 ## Import Cycles
 - None detected.
@@ -824,12 +829,12 @@ Nodes (6): Choose the cut behavior, Editable video timelines, Keep synchronized 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CesiumJS — 3D flyovers in Remotion` connect `CesiumJS — 3D flyovers in Remotion` to `remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md`?**
+- **Why does `Remotion Maps` connect `Remotion Maps` to `remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Should `remotion` be split into smaller, more focused modules?**
   _Cohesion score 0.07462686567164178 - nodes in this community are weakly interconnected._
 - **Why does `remotion` connect `remotion` to `package.json`, `remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`, `remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`, `skills/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`, `skills/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Should `skills/remotion-markup/transitions.md` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `remotion-markup/SKILL.md` be split into smaller, more focused modules?**

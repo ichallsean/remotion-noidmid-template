@@ -1,5 +1,5 @@
 import { Composition, Folder } from "remotion";
-import sampleEpisodeJson from "../content/episodes/sample-01.json";
+import activeEpisodeJson from "../content/episodes/ep-01-dapur-pc.json";
 import {
   calculateLandscapeVideoMetadata,
   calculateVerticalReelsMetadata,
@@ -11,10 +11,9 @@ import {
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
-import type { Episode } from "./schemas/episode";
-import { getSlidesDurationInFrames } from "./schemas/episode";
+import { getSlidesDurationInFrames, parseEpisode } from "./schemas/episode";
 
-const sampleEpisode: Episode = sampleEpisodeJson;
+const activeEpisode = parseEpisode(activeEpisodeJson);
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -24,26 +23,26 @@ export const RemotionRoot: React.FC = () => {
           id="VerticalReels"
           component={VerticalReels}
           durationInFrames={getSlidesDurationInFrames(
-            sampleEpisode,
+            activeEpisode,
             VERTICAL_REELS_CONFIG.fps,
           )}
           fps={VERTICAL_REELS_CONFIG.fps}
           width={VERTICAL_REELS_CONFIG.width}
           height={VERTICAL_REELS_CONFIG.height}
-          defaultProps={sampleEpisode}
+          defaultProps={activeEpisode}
           calculateMetadata={calculateVerticalReelsMetadata}
         />
         <Composition
           id="LandscapeVideo"
           component={LandscapeVideo}
           durationInFrames={getSlidesDurationInFrames(
-            sampleEpisode,
+            activeEpisode,
             LANDSCAPE_VIDEO_CONFIG.fps,
           )}
           fps={LANDSCAPE_VIDEO_CONFIG.fps}
           width={LANDSCAPE_VIDEO_CONFIG.width}
           height={LANDSCAPE_VIDEO_CONFIG.height}
-          defaultProps={sampleEpisode}
+          defaultProps={activeEpisode}
           calculateMetadata={calculateLandscapeVideoMetadata}
         />
       </Folder>

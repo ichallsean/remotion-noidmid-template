@@ -1,0 +1,71 @@
+{
+  "slug": "ep-01-dapur-pc",
+  "title": "Analogi Tim Dapur: RAM vs SSD vs CPU",
+  "subtitle": "Mana biang keroknya?",
+  "themeColor": "#f59e0b",
+  "themePreset": "gta6-neon",
+  "watermark": "@noidmid",
+  "watermarkMode": "intro-outro",
+  "slides": [
+    {
+      "id": "hook",
+      "title": "Tim Dapur PC Kamu",
+      "body": "Kalau satu lambat, semua ikut antre. Kenali perannya dulu.",
+      "layout": "hook-cover",
+      "icon": "zap",
+      "image": "episodes/ep-01-dapur-pc/kitchen-hero.svg",
+      "imageMode": "hero-card",
+      "highlightText": "RAM vs SSD vs CPU",
+      "secondaryText": "Analogi dapur",
+      "durationInSeconds": 3
+    },
+    {
+      "id": "analogy",
+      "title": "Meja vs Lemari",
+      "body": "Meja penuh? Koki tetap lambat walau bumbunya rapi. Lemari berantakan? Meja sepi pun tetap lama.",
+      "layout": "analogy-split",
+      "icon": "ram",
+      "image": "episodes/ep-01-dapur-pc/kitchen-backdrop.svg",
+      "imageMode": "backdrop",
+      "highlightText": "RAM = meja kerja",
+      "secondaryText": "SSD = lemari bumbu",
+      "durationInSeconds": 4
+    },
+    {
+      "id": "stat",
+      "title": "Disk Penuh Bikin Drop",
+      "body": "SSD yang tersisa cuma sekitar 10% sering kehilangan kecepatan. Cek sisa ruang sebelum menyalahkan RAM.",
+      "layout": "stat-highlight",
+      "icon": "ssd",
+      "image": "episodes/ep-01-dapur-pc/storage-badge.svg",
+      "imageMode": "floating-badge",
+      "highlightText": "90%",
+      "durationInSeconds": 5
+    },
+    {
+      "id": "spec",
+      "title": "Koki Utamanya: CPU",
+      "body": "CPU kepanasan atau mentok 100% bikin semua instruction antre. Lihat beban dan suhunya.",
+      "layout": "spec-card",
+      "icon": "cpu",
+      "image": "episodes/ep-01-dapur-pc/cpu-card.svg",
+      "imageMode": "hero-card",
+      "titleStyle": "typewriter",
+      "highlightText": "CPU · RAM · SSD",
+      "durationInSeconds": 5
+    },
+    {
+      "id": "cta",
+      "title": "Cek Sekarang",
+      "body": "Ctrl+Shift+Esc. Kalau angkanya merah, kamu sudah tahu harus mulai dari mana.",
+      "layout": "cta-outro",
+      "icon": "wrench",
+      "image": "episodes/ep-01-dapur-pc/storage-badge.svg",
+      "imageMode": "floating-badge",
+      "highlightText": "Task Manager",
+      "secondaryText": "Follow untuk trik PC berikutnya",
+      "sfx": "ding",
+      "durationInSeconds": 4
+    }
+  ]
+}
